@@ -4,7 +4,7 @@ function init()
     var data = [
         {
             x: [1, 2, 3, 4, 5],
-            y:m[1, 2, 4, 8, 16]
+            y: [1, 2, 4, 8, 16]
         }
     ];
 
@@ -13,7 +13,7 @@ function init()
 }
 
 // call update() function when a change occurs
-d3.selectAll("#selDataset").on("chnage", update);
+d3.selectAll("#selDataset").on("change", update);
 
 function update()
 {
@@ -33,7 +33,7 @@ function update()
         x = [1, 2, 3, 4, 5];
         y = [1, 2, 4, 8, 16];
     }
-       else if(value === 'dataset1')
+    else if(value === 'dataset2')
     {
         // check for dataset2
         x = [1, 2, 3, 4, 5];
